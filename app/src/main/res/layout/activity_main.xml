@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.jaychan.library.view.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="示例样式1"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:tvBackgroundColor="#73A5F0"
+        app:tvCornerRadius="5dp"/>
+
+    <com.jaychan.library.view.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="示例样式2"
+        android:textColor="#73A5F0"
+        android:textSize="12sp"
+        app:tvBackgroundColor="#ffffff"
+        app:tvBorderColor="#73A5F0"
+        app:tvBorderWidth="1dp"
+        app:tvCornerRadius="5dp"/>
+
+
+    <com.jaychan.library.view.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="示例样式3"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:tvBackgroundColor="#73A5F0"
+        app:tvCornerRadius="20dp"/>
+
+    <com.jaychan.library.view.RoundTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="示例样式4"
+        android:textColor="#73A5F0"
+        android:textSize="12sp"
+        app:tvBackgroundColor="#ffffff"
+        app:tvBorderColor="#73A5F0"
+        app:tvBorderWidth="1dp"
+        app:tvCornerRadius="20dp"/>
+
+</LinearLayout>

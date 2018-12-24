@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--支持圆角的TextView-->
+    <declare-styleable name="RoundTextView">
+        <attr name="tvBackgroundColor" format="color"/>
+        <attr name="tvBorderWidth" format="dimension"/>
+        <attr name="tvBorderColor" format="color"/>
+        <attr name="tvCornerRadius" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>
