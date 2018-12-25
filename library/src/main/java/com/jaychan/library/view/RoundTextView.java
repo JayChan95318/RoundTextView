@@ -32,17 +32,17 @@ public class RoundTextView extends android.support.v7.widget.AppCompatTextView {
 
         if (attributes != null) {
 
-            int rtvBorderWidth = attributes.getDimensionPixelSize(R.styleable.RoundTextView_tvBorderWidth, 0);
-            int rtvBorderColor = attributes.getColor(R.styleable.RoundTextView_tvBorderColor, Color.BLACK);
-            float rtvRadius = attributes.getDimension(R.styleable.RoundTextView_tvCornerRadius, 0);
-            int rtvBgColor = attributes.getColor(R.styleable.RoundTextView_tvBackgroundColor, Color.WHITE);
+            int borderWidth = attributes.getDimensionPixelSize(R.styleable.RoundTextView_tvBorderWidth, 0);
+            int borderColor = attributes.getColor(R.styleable.RoundTextView_tvBorderColor, Color.BLACK);
+            float radius = attributes.getDimension(R.styleable.RoundTextView_tvCornerRadius, 0);
+            int backgroundColor = attributes.getColor(R.styleable.RoundTextView_tvBackgroundColor, Color.WHITE);
             attributes.recycle();
 
             GradientDrawable gd = new GradientDrawable();//创建drawable
-            gd.setColor(rtvBgColor);
-            gd.setCornerRadius(rtvRadius);
-            if (rtvBorderWidth > 0) {
-                gd.setStroke(rtvBorderWidth, rtvBorderColor);
+            gd.setColor(backgroundColor);
+            gd.setCornerRadius(radius);
+            if (borderWidth > 0) {
+                gd.setStroke(borderWidth, borderColor);
             }
 
             this.setBackground(gd);
