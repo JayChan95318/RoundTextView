@@ -31,18 +31,32 @@ public class RoundTextView extends android.support.v7.widget.AppCompatTextView {
         TypedArray attributes = context.getTheme().obtainStyledAttributes(attrs, R.styleable.RoundTextView, defStyleAttr, 0);
 
         if (attributes != null) {
-
             int borderWidth = attributes.getDimensionPixelSize(R.styleable.RoundTextView_tvBorderWidth, 0);
             int borderColor = attributes.getColor(R.styleable.RoundTextView_tvBorderColor, Color.BLACK);
             float radius = attributes.getDimension(R.styleable.RoundTextView_tvCornerRadius, 0);
+            float topLeftRadius = attributes.getDimension(R.styleable.RoundTextView_tvTopLeftRadius, 0);
+            float topRightRadius = attributes.getDimension(R.styleable.RoundTextView_tvTopRightRadius, 0);
+            float bottomLeftRadius = attributes.getDimension(R.styleable.RoundTextView_tvBottomLeftRadius, 0);
+            float bottomRightRadius = attributes.getDimension(R.styleable.RoundTextView_tvBottomRightRadius, 0);
             int backgroundColor = attributes.getColor(R.styleable.RoundTextView_tvBackgroundColor, Color.WHITE);
             attributes.recycle();
 
             GradientDrawable gd = new GradientDrawable();//创建drawable
             gd.setColor(backgroundColor);
-            gd.setCornerRadius(radius);
             if (borderWidth > 0) {
                 gd.setStroke(borderWidth, borderColor);
+            }
+
+            if (topLeftRadius > 0 || topRightRadius > 0 || bottomLeftRadius > 0 || bottomRightRadius > 0) {
+                float[] radii = new float[]{
+                        topLeftRadius, topLeftRadius,
+                        topRightRadius, topRightRadius,
+                        bottomRightRadius, bottomRightRadius,
+                        bottomLeftRadius, bottomLeftRadius
+                };
+                gd.setCornerRadii(radii);
+            } else {
+                gd.setCornerRadius(radius);
             }
 
             this.setBackground(gd);

@@ -6,7 +6,12 @@
         <attr name="tvBorderWidth" format="dimension"/>
         <attr name="tvBorderColor" format="color"/>
         <attr name="tvCornerRadius" format="dimension"/>
+        <attr name="tvTopLeftRadius" format="dimension"/>
+        <attr name="tvTopRightRadius" format="dimension"/>
+        <attr name="tvBottomLeftRadius" format="dimension"/>
+        <attr name="tvBottomRightRadius" format="dimension"/>
     </declare-styleable>
+
 
 
 </resources>
