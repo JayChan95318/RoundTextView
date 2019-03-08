@@ -1,8 +1,8 @@
-##支持设置圆角的TextView
+## 支持设置圆角的TextView
 
 支持分别设置左上、右上、左下、右下的圆角大小
 
-###效果图:
+### 效果图:
 
    ![](https://i.imgur.com/Q9XqJb3.jpg)
 
@@ -29,7 +29,7 @@
     }
 
 
-##参数说明
+## 参数说明
     
     app:tvBackgroundColor   背景颜色(如果需要设置背景颜色的话必须设置该属性,不能用android:background代替)
     app:tvBorderWidth    边框线的大小
@@ -41,7 +41,7 @@
     app：tvBottomRightRadius   右下边的圆角大熊啊
 
 
-##效果图布局代码
+## 效果图布局代码
 
     <?xml version="1.0" encoding="utf-8"?>
     
