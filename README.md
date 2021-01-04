@@ -25,7 +25,7 @@
 
     dependencies {
         ......
-          compile 'com.github.JayChan95318:MultipleTextView:1.0'
+          compile 'com.github.JayChan95318:RoundTextView:1.0.1'
     }
 
 
